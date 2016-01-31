@@ -1,0 +1,94 @@
+% Physics 206L
+% 2015 Fall semester
+% Mid-term
+% Author: Randy P. Tompkins
+% 200 points possible
+
+% Updated 2015.10.22 after suggestions from multiple people.
+
+
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{circuitikz}
+
+
+\begin{document}
+
+\title{Physics 206L Midterm Examination\\
+       Morgan State University\\}
+\author{Dr. Randy P. Tompkins}
+\date{October 10, 2015}
+
+\maketitle
+
+\noindent
+\textbf{Instructions}: Closed notes. Closed books. No phones or computers. No programmable calculators. Write your name and page number on every page and staple them in order. For questions that require numerical answers, please put a box around your final answer. 
+
+
+\begin{enumerate}
+
+	\item{(15 pts.) Define the following terms:}
+    \subitem{a) Accuracy}
+    \subitem{b) Precision}
+  
+  \item{(15 pts.) On multiple occasions a student measures the resistance of a copper wire. The recorded values are $2.05\Omega$, $2.10\Omega$, $2.24\Omega$, and $1.99\Omega$. Compute both the mean $(\overline{x}) $ and standard deviation $ (\sigma) $ of these results.
+  
+  \item{(10 pts.) Describe how standing waves are produced.}
+  
+  \item{(5 pts.) A sound wave of frequency 500 Hz is traveling through air. If the velocity of the wave is 331 m/s, compute the wavelength $ (\lambda) $.}
+  
+  \item{(10 pts.) The electric potential of a point charge located at the origin is given by $ \phi = \frac{1}{4 \pi \epsilon_{0}} \frac{q}{r} $ . Compute the electric field $ \vec{E} $.}
+  
+  \item{(5 pts.) A resistor carries a current of 2.5 A when a voltage of 12 V is applied. What is current if the voltage across the resistor is 120 V.}
+  
+  \item{(10 pts.) Two copper wires at the same temperature have different sizes. Wire 1 has a length of 2 m, cross-sectional area of $2.5 x 10^{-2} m^{2}$, and resistivity $\rho = 1.68 x 10^{-8} \Omega-m $. If the second wire has twice the cross sectional area and twice the length of the first wire, what is the resistivity $\rho$ of the second wire?}
+  
+  \item{(10 pts.) A student measures the velocity (v) of a baseball as a function of time (t). After recording the data, the student then fits the data using the equation $ v = v_0 + at $ with $ R^2 = 0.95 $. What variables in the equation for (v) correspond to the slope (m) and y-intercept (b)? Comment on the value of $ R^{2} $.}
+  
+  \item{(10 pts.) Write down True or False for the following statements:}
+     \subitem{a) In electrostatics, electric field lines are perpendicular to metal surfaces.}
+     \subitem{b) The time constant of an $RC$ circuit depends on the applied voltage.}
+     \subitem{c) Charge is not a conserved quantity.}
+     \subitem{d) The first four resonances of a tube closed at one end occur at $ L = \frac{1}{4}\lambda,\frac{3}{4}\lambda,\frac{5}{4}\lambda,\frac{7}{4}\lambda$., where L is the length, and $ \lambda $ is the wavelength.}
+     \subitem{e) $1 V $ is equivalent to $1 J / C $.}
+  
+  \item{(10 pts.) An RC circuit consists of a $ 12 V $ battery, a $ 10 \mu F $ capacitor, and a $ 5 \Omega $ resistor.} 
+     \subitem{a) Draw the circuit for each component in series.}
+     \subitem{b) Write down the direction of the current as the capacitor charges.}
+     \subitem{c) Compute the time constant $( \tau )$.}
+  
+  \item{(33 pts.) Two point charges both with charge $+q$ are separated by a distance d. Draw the electric field and equipotential lines. Draw enough electric field lines so that you can draw a minimum of 5 equipotential lines.}  
+  
+  \item{(33 pts.) Determine the equivalent resistance of the circuit shown below with $ R_{1} = 5 \Omega $, $ R_{2} = 2 \Omega $, $ R_{3} = 4 \Omega $, $ R_{4} = 6 \Omega $ and $ R_{5}= 10 \Omega $.} 
+     
+    \begin{circuitikz}
+           \draw (-1.5, 0)node[label={[font=\footnotesize]above:A}] {} to[R, l = $R_{1}$, o-] (1.4, 0)
+              (1.4, 0) to (1.4, 1.5)       
+              (1.4, 1.5) to[R, l = $R_{2}$] (5.5, 1.5)
+              (5.5, 1.5) to (5.5, 0)
+              (1.4, 0) to[R, l = $R_{3}$] (5.5, 0)
+              (1.4, 0) to (1.4, -1.5)
+              (1.4, -1.5) to[R, l = $R_{4}$] (5.5, -1.5)
+              (5.5, -1.5) to (5.5, 0)
+              (5.5, 0) to[R, l = $R_{5}$, -o] (8.0, 0)node[label={[font=\footnotesize]above:B}];
+     \end{circuitikz}
+      
+  \item{(33 pts.) An RC circuit consists of a $ 12 V $ battery, a $ 5 \mu F $ capacitor, and a $ 20 \Omega $ resistor.} The ordinary differential equation (ODE) resulting from such a circuit is given by:
+      \begin{equation}
+        \frac{dq}{dt} + \frac{q}{RC} - \frac{\epsilon}{R} = 0        
+      \end{equation}
+While the capacitor is charging, the solution of this ODE is given by:
+      \begin{equation}
+        q(t) = Q_{max} \left[ 1 - \exp \left( \frac{-t}{\tau}  \right)  \right] 
+      \end{equation}      
+     \subitem{a) Compute the time constant $( \tau )$ using the numbers given in the problem.}
+     \subitem{b) Compute the maximum charge on the capacitor $ (Q_{max} )$ using the numbers given in the problem. }
+     \subitem{c) What is the value of the charge after 2 time constants, $ q(t = 2\tau) $?}
+      
+\end{enumerate}
+
+
+\end{document}
+
+
+
